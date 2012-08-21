@@ -2,6 +2,7 @@
 
 @{
     ViewBag.Title = "Index";
+    ViewBag.PageName = "master-list";
 }
 
 <h2>Index</h2>
@@ -9,46 +10,22 @@
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-<table>
-    <tr>
-        <th>
-            TASK_ID
-        </th>
-        <th>
-            NAME_JP
-        </th>
-       
-        <th></th>
-    </tr>
 
 @foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.TASK_ID)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.NAME_JP)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.RANK)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.TASK_TYPE)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.REL_PLAN)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.STATUS)
-        </td>
-        <!--
+    <div class="row_title" id="row-@Html.DisplayFor(modelItem => item.TASK_ID)">
+        <span class="task_id">@Html.DisplayFor(modelItem => item.TASK_ID)</span>
+        <span class="name_jp">@Html.DisplayFor(modelItem => item.NAME_JP)</span>
+        <span class="rank">@Html.DisplayFor(modelItem => item.RANK)</span>
+        <span class="type">@Html.DisplayFor(modelItem => item.TASK_TYPE)</span>
+        <span class="rel_plan">@Html.DisplayFor(modelItem => item.REL_PLAN)</span>
+        <span class="status">@Html.DisplayFor(modelItem => item.STATUS)</span>
+            <!--
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
             @Html.ActionLink("Details", "Details", new { id=item.ID }) |
             @Html.ActionLink("Delete", "Delete", new { id=item.ID })
         </td>
         -->
-    </tr>
+    </div>
 }
 
-</table>

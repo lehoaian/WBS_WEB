@@ -322,3 +322,45 @@ div#title {
 .tri-state {
     width: 6em;
 }
+
+
+.master-list {
+	
+}
+
+.master-list .row_title {
+    width: 100%;
+    padding: 10px;
+    display:block;
+	
+}
+
+.master-list .row_title span {
+    display : block;
+    float : left;
+	
+}
+
+.master-list .row_title span.task_id {
+    width: 5%;
+}
+
+.master-list .row_title span.name_jp {
+    width: 40%;
+}
+
+.master-list .row_title span.rank {
+    width: 5%;
+}
+
+.master-list .row_title span.type {
+    width: 15%;
+}
+
+.master-list .row_title span.rel_plan {
+    width: 15%;
+}
+
+.master-list .row_title span.status {
+    width: 15%;
+}
