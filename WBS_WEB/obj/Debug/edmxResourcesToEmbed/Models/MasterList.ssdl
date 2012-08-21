@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="ModelStoreContainer">
+    <EntitySet Name="MasterList" EntityType="Model.Store.MasterList" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="MasterList">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TASK_ID" Type="int" />
+    <Property Name="NAME_JP" Type="nvarchar(max)" />
+    <Property Name="RECV_DATE" Type="datetime2" Precision="0" />
+    <Property Name="IS_PLANED" Type="nvarchar" MaxLength="255" />
+    <Property Name="REQ_FROM" Type="nvarchar" MaxLength="255" />
+    <Property Name="RANK" Type="nvarchar" MaxLength="255" />
+    <Property Name="TASK_TYPE" Type="nvarchar" MaxLength="255" />
+    <Property Name="PIC" Type="nvarchar" MaxLength="255" />
+    <Property Name="PIC_JP" Type="nvarchar" MaxLength="255" />
+    <Property Name="VN_OR_JP" Type="nvarchar" MaxLength="255" />
+    <Property Name="CTRL" Type="nvarchar" MaxLength="255" />
+    <Property Name="ASSIGN_DATE" Type="datetime2" Precision="0" />
+    <Property Name="DESIRED_REL_DATE" Type="datetime2" Precision="0" />
+    <Property Name="ABS_REL_DATE" Type="datetime2" Precision="0" />
+    <Property Name="EFFORT_PLAN_JP" Type="nvarchar" MaxLength="255" />
+    <Property Name="EFFORT_ACTUAL_JP" Type="nvarchar" MaxLength="255" />
+    <Property Name="EFFORT_PLAN" Type="nvarchar" MaxLength="255" />
+    <Property Name="EFFORT_ACTUAL" Type="nvarchar" MaxLength="255" />
+    <Property Name="IS_TEMP_ANS" Type="nvarchar" MaxLength="255" />
+    <Property Name="WHY_NOT_VN" Type="nvarchar(max)" />
+    <Property Name="HELP_DESK" Type="nvarchar" MaxLength="255" />
+    <Property Name="STATUS" Type="nvarchar" MaxLength="255" />
+    <Property Name="COUNT_ANS" Type="nvarchar" MaxLength="255" />
+    <Property Name="LAST_CONTACT_TIME" Type="datetime2" Precision="0" />
+    <Property Name="COUNT_FROM_LAST_CONTACT" Type="nvarchar" MaxLength="255" />
+    <Property Name="REQ_DEPT" Type="nvarchar(max)" />
+    <Property Name="REL_PLAN" Type="datetime2" Precision="0" />
+    <Property Name="OLD_REL_PLAN" Type="nvarchar" MaxLength="255" />
+    <Property Name="FIN_DATE" Type="datetime2" Precision="0" />
+    <Property Name="LEAD_TIME" Type="nvarchar" MaxLength="255" />
+    <Property Name="REMARK" Type="nvarchar(max)" />
+    <Property Name="NAME_VN" Type="nvarchar(max)" />
+    <Property Name="KEYWORD" Type="nvarchar(max)" />
+    <Property Name="SUGGEST" Type="nvarchar(max)" />
+    <Property Name="WIKI_JP_LINK" Type="nvarchar(max)" />
+    <Property Name="PLAN_EXSE" Type="nvarchar" MaxLength="255" />
+    <Property Name="PLAN_COM" Type="nvarchar" MaxLength="255" />
+    <Property Name="ACTUAL_EXSE" Type="nvarchar" MaxLength="255" />
+    <Property Name="ACTUAL_COM" Type="nvarchar" MaxLength="255" />
+    <Property Name="UPDATE_STAMP" Type="datetime2" Precision="0" />
+    <Property Name="SSMA_TimeStamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+  </EntityType>
+</Schema>

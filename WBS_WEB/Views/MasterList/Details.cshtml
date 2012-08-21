@@ -1,0 +1,215 @@
+﻿@model WBS_WEB.Models.MasterList
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>MasterList</legend>
+
+    <div class="display-label">TASK_ID</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.TASK_ID)
+    </div>
+
+    <div class="display-label">NAME_JP</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.NAME_JP)
+    </div>
+
+    <div class="display-label">RECV_DATE</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.RECV_DATE)
+    </div>
+
+    <div class="display-label">IS_PLANED</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.IS_PLANED)
+    </div>
+
+    <div class="display-label">REQ_FROM</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.REQ_FROM)
+    </div>
+
+    <div class="display-label">RANK</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.RANK)
+    </div>
+
+    <div class="display-label">TASK_TYPE</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.TASK_TYPE)
+    </div>
+
+    <div class="display-label">PIC</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.PIC)
+    </div>
+
+    <div class="display-label">PIC_JP</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.PIC_JP)
+    </div>
+
+    <div class="display-label">VN_OR_JP</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.VN_OR_JP)
+    </div>
+
+    <div class="display-label">CTRL</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CTRL)
+    </div>
+
+    <div class="display-label">ASSIGN_DATE</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ASSIGN_DATE)
+    </div>
+
+    <div class="display-label">DESIRED_REL_DATE</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DESIRED_REL_DATE)
+    </div>
+
+    <div class="display-label">ABS_REL_DATE</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ABS_REL_DATE)
+    </div>
+
+    <div class="display-label">EFFORT_PLAN_JP</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.EFFORT_PLAN_JP)
+    </div>
+
+    <div class="display-label">EFFORT_ACTUAL_JP</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.EFFORT_ACTUAL_JP)
+    </div>
+
+    <div class="display-label">EFFORT_PLAN</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.EFFORT_PLAN)
+    </div>
+
+    <div class="display-label">EFFORT_ACTUAL</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.EFFORT_ACTUAL)
+    </div>
+
+    <div class="display-label">IS_TEMP_ANS</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.IS_TEMP_ANS)
+    </div>
+
+    <div class="display-label">WHY_NOT_VN</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.WHY_NOT_VN)
+    </div>
+
+    <div class="display-label">HELP_DESK</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.HELP_DESK)
+    </div>
+
+    <div class="display-label">STATUS</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.STATUS)
+    </div>
+
+    <div class="display-label">COUNT_ANS</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.COUNT_ANS)
+    </div>
+
+    <div class="display-label">LAST_CONTACT_TIME</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.LAST_CONTACT_TIME)
+    </div>
+
+    <div class="display-label">COUNT_FROM_LAST_CONTACT</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.COUNT_FROM_LAST_CONTACT)
+    </div>
+
+    <div class="display-label">REQ_DEPT</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.REQ_DEPT)
+    </div>
+
+    <div class="display-label">REL_PLAN</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.REL_PLAN)
+    </div>
+
+    <div class="display-label">OLD_REL_PLAN</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.OLD_REL_PLAN)
+    </div>
+
+    <div class="display-label">FIN_DATE</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.FIN_DATE)
+    </div>
+
+    <div class="display-label">LEAD_TIME</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.LEAD_TIME)
+    </div>
+
+    <div class="display-label">REMARK</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.REMARK)
+    </div>
+
+    <div class="display-label">NAME_VN</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.NAME_VN)
+    </div>
+
+    <div class="display-label">KEYWORD</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.KEYWORD)
+    </div>
+
+    <div class="display-label">SUGGEST</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.SUGGEST)
+    </div>
+
+    <div class="display-label">WIKI_JP_LINK</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.WIKI_JP_LINK)
+    </div>
+
+    <div class="display-label">PLAN_EXSE</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.PLAN_EXSE)
+    </div>
+
+    <div class="display-label">PLAN_COM</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.PLAN_COM)
+    </div>
+
+    <div class="display-label">ACTUAL_EXSE</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ACTUAL_EXSE)
+    </div>
+
+    <div class="display-label">ACTUAL_COM</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ACTUAL_COM)
+    </div>
+
+    <div class="display-label">UPDATE_STAMP</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.UPDATE_STAMP)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

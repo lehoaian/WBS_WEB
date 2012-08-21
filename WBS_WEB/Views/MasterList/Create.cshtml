@@ -1,0 +1,345 @@
+﻿@model WBS_WEB.Models.MasterList
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+    <fieldset>
+        <legend>MasterList</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.TASK_ID)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.TASK_ID)
+            @Html.ValidationMessageFor(model => model.TASK_ID)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.NAME_JP)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.NAME_JP)
+            @Html.ValidationMessageFor(model => model.NAME_JP)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.RECV_DATE)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.RECV_DATE)
+            @Html.ValidationMessageFor(model => model.RECV_DATE)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.IS_PLANED)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.IS_PLANED)
+            @Html.ValidationMessageFor(model => model.IS_PLANED)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.REQ_FROM)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.REQ_FROM)
+            @Html.ValidationMessageFor(model => model.REQ_FROM)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.RANK)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.RANK)
+            @Html.ValidationMessageFor(model => model.RANK)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.TASK_TYPE)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.TASK_TYPE)
+            @Html.ValidationMessageFor(model => model.TASK_TYPE)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.PIC)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.PIC)
+            @Html.ValidationMessageFor(model => model.PIC)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.PIC_JP)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.PIC_JP)
+            @Html.ValidationMessageFor(model => model.PIC_JP)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.VN_OR_JP)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.VN_OR_JP)
+            @Html.ValidationMessageFor(model => model.VN_OR_JP)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.CTRL)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.CTRL)
+            @Html.ValidationMessageFor(model => model.CTRL)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ASSIGN_DATE)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ASSIGN_DATE)
+            @Html.ValidationMessageFor(model => model.ASSIGN_DATE)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.DESIRED_REL_DATE)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.DESIRED_REL_DATE)
+            @Html.ValidationMessageFor(model => model.DESIRED_REL_DATE)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ABS_REL_DATE)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ABS_REL_DATE)
+            @Html.ValidationMessageFor(model => model.ABS_REL_DATE)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.EFFORT_PLAN_JP)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.EFFORT_PLAN_JP)
+            @Html.ValidationMessageFor(model => model.EFFORT_PLAN_JP)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.EFFORT_ACTUAL_JP)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.EFFORT_ACTUAL_JP)
+            @Html.ValidationMessageFor(model => model.EFFORT_ACTUAL_JP)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.EFFORT_PLAN)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.EFFORT_PLAN)
+            @Html.ValidationMessageFor(model => model.EFFORT_PLAN)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.EFFORT_ACTUAL)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.EFFORT_ACTUAL)
+            @Html.ValidationMessageFor(model => model.EFFORT_ACTUAL)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.IS_TEMP_ANS)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.IS_TEMP_ANS)
+            @Html.ValidationMessageFor(model => model.IS_TEMP_ANS)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.WHY_NOT_VN)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.WHY_NOT_VN)
+            @Html.ValidationMessageFor(model => model.WHY_NOT_VN)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.HELP_DESK)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.HELP_DESK)
+            @Html.ValidationMessageFor(model => model.HELP_DESK)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.STATUS)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.STATUS)
+            @Html.ValidationMessageFor(model => model.STATUS)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.COUNT_ANS)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.COUNT_ANS)
+            @Html.ValidationMessageFor(model => model.COUNT_ANS)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.LAST_CONTACT_TIME)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.LAST_CONTACT_TIME)
+            @Html.ValidationMessageFor(model => model.LAST_CONTACT_TIME)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.COUNT_FROM_LAST_CONTACT)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.COUNT_FROM_LAST_CONTACT)
+            @Html.ValidationMessageFor(model => model.COUNT_FROM_LAST_CONTACT)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.REQ_DEPT)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.REQ_DEPT)
+            @Html.ValidationMessageFor(model => model.REQ_DEPT)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.REL_PLAN)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.REL_PLAN)
+            @Html.ValidationMessageFor(model => model.REL_PLAN)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.OLD_REL_PLAN)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.OLD_REL_PLAN)
+            @Html.ValidationMessageFor(model => model.OLD_REL_PLAN)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.FIN_DATE)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.FIN_DATE)
+            @Html.ValidationMessageFor(model => model.FIN_DATE)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.LEAD_TIME)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.LEAD_TIME)
+            @Html.ValidationMessageFor(model => model.LEAD_TIME)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.REMARK)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.REMARK)
+            @Html.ValidationMessageFor(model => model.REMARK)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.NAME_VN)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.NAME_VN)
+            @Html.ValidationMessageFor(model => model.NAME_VN)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.KEYWORD)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.KEYWORD)
+            @Html.ValidationMessageFor(model => model.KEYWORD)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.SUGGEST)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.SUGGEST)
+            @Html.ValidationMessageFor(model => model.SUGGEST)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.WIKI_JP_LINK)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.WIKI_JP_LINK)
+            @Html.ValidationMessageFor(model => model.WIKI_JP_LINK)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.PLAN_EXSE)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.PLAN_EXSE)
+            @Html.ValidationMessageFor(model => model.PLAN_EXSE)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.PLAN_COM)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.PLAN_COM)
+            @Html.ValidationMessageFor(model => model.PLAN_COM)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ACTUAL_EXSE)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ACTUAL_EXSE)
+            @Html.ValidationMessageFor(model => model.ACTUAL_EXSE)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ACTUAL_COM)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ACTUAL_COM)
+            @Html.ValidationMessageFor(model => model.ACTUAL_COM)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.UPDATE_STAMP)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.UPDATE_STAMP)
+            @Html.ValidationMessageFor(model => model.UPDATE_STAMP)
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

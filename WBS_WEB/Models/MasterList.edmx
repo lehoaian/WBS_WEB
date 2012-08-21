@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Model.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="ModelStoreContainer">
+          <EntitySet Name="MasterList" EntityType="Model.Store.MasterList" store:Type="Tables" Schema="dbo" />
+        </EntityContainer>
+        <EntityType Name="MasterList">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="TASK_ID" Type="int" />
+          <Property Name="NAME_JP" Type="nvarchar(max)" />
+          <Property Name="RECV_DATE" Type="datetime2" Precision="0" />
+          <Property Name="IS_PLANED" Type="nvarchar" MaxLength="255" />
+          <Property Name="REQ_FROM" Type="nvarchar" MaxLength="255" />
+          <Property Name="RANK" Type="nvarchar" MaxLength="255" />
+          <Property Name="TASK_TYPE" Type="nvarchar" MaxLength="255" />
+          <Property Name="PIC" Type="nvarchar" MaxLength="255" />
+          <Property Name="PIC_JP" Type="nvarchar" MaxLength="255" />
+          <Property Name="VN_OR_JP" Type="nvarchar" MaxLength="255" />
+          <Property Name="CTRL" Type="nvarchar" MaxLength="255" />
+          <Property Name="ASSIGN_DATE" Type="datetime2" Precision="0" />
+          <Property Name="DESIRED_REL_DATE" Type="datetime2" Precision="0" />
+          <Property Name="ABS_REL_DATE" Type="datetime2" Precision="0" />
+          <Property Name="EFFORT_PLAN_JP" Type="nvarchar" MaxLength="255" />
+          <Property Name="EFFORT_ACTUAL_JP" Type="nvarchar" MaxLength="255" />
+          <Property Name="EFFORT_PLAN" Type="nvarchar" MaxLength="255" />
+          <Property Name="EFFORT_ACTUAL" Type="nvarchar" MaxLength="255" />
+          <Property Name="IS_TEMP_ANS" Type="nvarchar" MaxLength="255" />
+          <Property Name="WHY_NOT_VN" Type="nvarchar(max)" />
+          <Property Name="HELP_DESK" Type="nvarchar" MaxLength="255" />
+          <Property Name="STATUS" Type="nvarchar" MaxLength="255" />
+          <Property Name="COUNT_ANS" Type="nvarchar" MaxLength="255" />
+          <Property Name="LAST_CONTACT_TIME" Type="datetime2" Precision="0" />
+          <Property Name="COUNT_FROM_LAST_CONTACT" Type="nvarchar" MaxLength="255" />
+          <Property Name="REQ_DEPT" Type="nvarchar(max)" />
+          <Property Name="REL_PLAN" Type="datetime2" Precision="0" />
+          <Property Name="OLD_REL_PLAN" Type="nvarchar" MaxLength="255" />
+          <Property Name="FIN_DATE" Type="datetime2" Precision="0" />
+          <Property Name="LEAD_TIME" Type="nvarchar" MaxLength="255" />
+          <Property Name="REMARK" Type="nvarchar(max)" />
+          <Property Name="NAME_VN" Type="nvarchar(max)" />
+          <Property Name="KEYWORD" Type="nvarchar(max)" />
+          <Property Name="SUGGEST" Type="nvarchar(max)" />
+          <Property Name="WIKI_JP_LINK" Type="nvarchar(max)" />
+          <Property Name="PLAN_EXSE" Type="nvarchar" MaxLength="255" />
+          <Property Name="PLAN_COM" Type="nvarchar" MaxLength="255" />
+          <Property Name="ACTUAL_EXSE" Type="nvarchar" MaxLength="255" />
+          <Property Name="ACTUAL_COM" Type="nvarchar" MaxLength="255" />
+          <Property Name="UPDATE_STAMP" Type="datetime2" Precision="0" />
+          <Property Name="SSMA_TimeStamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Model" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="MasterList" EntityType="Model.MasterList" />
+        </EntityContainer>
+        <EntityType Name="MasterList">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TASK_ID" Type="Int32" />
+          <Property Name="NAME_JP" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="RECV_DATE" Type="DateTime" />
+          <Property Name="IS_PLANED" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="REQ_FROM" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="RANK" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="TASK_TYPE" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="PIC" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="PIC_JP" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="VN_OR_JP" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="CTRL" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="ASSIGN_DATE" Type="DateTime" />
+          <Property Name="DESIRED_REL_DATE" Type="DateTime" />
+          <Property Name="ABS_REL_DATE" Type="DateTime" />
+          <Property Name="EFFORT_PLAN_JP" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="EFFORT_ACTUAL_JP" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="EFFORT_PLAN" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="EFFORT_ACTUAL" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="IS_TEMP_ANS" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="WHY_NOT_VN" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="HELP_DESK" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="STATUS" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="COUNT_ANS" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="LAST_CONTACT_TIME" Type="DateTime" />
+          <Property Name="COUNT_FROM_LAST_CONTACT" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="REQ_DEPT" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="REL_PLAN" Type="DateTime" />
+          <Property Name="OLD_REL_PLAN" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="FIN_DATE" Type="DateTime" />
+          <Property Name="LEAD_TIME" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="REMARK" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="NAME_VN" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="KEYWORD" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="SUGGEST" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="WIKI_JP_LINK" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="PLAN_EXSE" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="PLAN_COM" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="ACTUAL_EXSE" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="ACTUAL_COM" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="UPDATE_STAMP" Type="DateTime" />
+          <Property Name="SSMA_TimeStamp" Type="Binary" Nullable="false" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="Entities">
+          <EntitySetMapping Name="MasterList"><EntityTypeMapping TypeName="Model.MasterList"><MappingFragment StoreEntitySet="MasterList">
+            <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="TASK_ID" ColumnName="TASK_ID" />
+            <ScalarProperty Name="NAME_JP" ColumnName="NAME_JP" />
+            <ScalarProperty Name="RECV_DATE" ColumnName="RECV_DATE" />
+            <ScalarProperty Name="IS_PLANED" ColumnName="IS_PLANED" />
+            <ScalarProperty Name="REQ_FROM" ColumnName="REQ_FROM" />
+            <ScalarProperty Name="RANK" ColumnName="RANK" />
+            <ScalarProperty Name="TASK_TYPE" ColumnName="TASK_TYPE" />
+            <ScalarProperty Name="PIC" ColumnName="PIC" />
+            <ScalarProperty Name="PIC_JP" ColumnName="PIC_JP" />
+            <ScalarProperty Name="VN_OR_JP" ColumnName="VN_OR_JP" />
+            <ScalarProperty Name="CTRL" ColumnName="CTRL" />
+            <ScalarProperty Name="ASSIGN_DATE" ColumnName="ASSIGN_DATE" />
+            <ScalarProperty Name="DESIRED_REL_DATE" ColumnName="DESIRED_REL_DATE" />
+            <ScalarProperty Name="ABS_REL_DATE" ColumnName="ABS_REL_DATE" />
+            <ScalarProperty Name="EFFORT_PLAN_JP" ColumnName="EFFORT_PLAN_JP" />
+            <ScalarProperty Name="EFFORT_ACTUAL_JP" ColumnName="EFFORT_ACTUAL_JP" />
+            <ScalarProperty Name="EFFORT_PLAN" ColumnName="EFFORT_PLAN" />
+            <ScalarProperty Name="EFFORT_ACTUAL" ColumnName="EFFORT_ACTUAL" />
+            <ScalarProperty Name="IS_TEMP_ANS" ColumnName="IS_TEMP_ANS" />
+            <ScalarProperty Name="WHY_NOT_VN" ColumnName="WHY_NOT_VN" />
+            <ScalarProperty Name="HELP_DESK" ColumnName="HELP_DESK" />
+            <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+            <ScalarProperty Name="COUNT_ANS" ColumnName="COUNT_ANS" />
+            <ScalarProperty Name="LAST_CONTACT_TIME" ColumnName="LAST_CONTACT_TIME" />
+            <ScalarProperty Name="COUNT_FROM_LAST_CONTACT" ColumnName="COUNT_FROM_LAST_CONTACT" />
+            <ScalarProperty Name="REQ_DEPT" ColumnName="REQ_DEPT" />
+            <ScalarProperty Name="REL_PLAN" ColumnName="REL_PLAN" />
+            <ScalarProperty Name="OLD_REL_PLAN" ColumnName="OLD_REL_PLAN" />
+            <ScalarProperty Name="FIN_DATE" ColumnName="FIN_DATE" />
+            <ScalarProperty Name="LEAD_TIME" ColumnName="LEAD_TIME" />
+            <ScalarProperty Name="REMARK" ColumnName="REMARK" />
+            <ScalarProperty Name="NAME_VN" ColumnName="NAME_VN" />
+            <ScalarProperty Name="KEYWORD" ColumnName="KEYWORD" />
+            <ScalarProperty Name="SUGGEST" ColumnName="SUGGEST" />
+            <ScalarProperty Name="WIKI_JP_LINK" ColumnName="WIKI_JP_LINK" />
+            <ScalarProperty Name="PLAN_EXSE" ColumnName="PLAN_EXSE" />
+            <ScalarProperty Name="PLAN_COM" ColumnName="PLAN_COM" />
+            <ScalarProperty Name="ACTUAL_EXSE" ColumnName="ACTUAL_EXSE" />
+            <ScalarProperty Name="ACTUAL_COM" ColumnName="ACTUAL_COM" />
+            <ScalarProperty Name="UPDATE_STAMP" ColumnName="UPDATE_STAMP" />
+            <ScalarProperty Name="SSMA_TimeStamp" ColumnName="SSMA_TimeStamp" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="False" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="MasterList" ZoomLevel="80">
+        <EntityTypeShape EntityType="Model.MasterList" Width="1.5" PointX="0.75" PointY="0.75" Height="7.8375048828125" IsExpanded="true" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

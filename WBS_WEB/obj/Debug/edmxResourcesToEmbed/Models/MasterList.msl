@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="MasterList">
+      <EntityTypeMapping TypeName="Model.MasterList">
+        <MappingFragment StoreEntitySet="MasterList">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TASK_ID" ColumnName="TASK_ID" />
+          <ScalarProperty Name="NAME_JP" ColumnName="NAME_JP" />
+          <ScalarProperty Name="RECV_DATE" ColumnName="RECV_DATE" />
+          <ScalarProperty Name="IS_PLANED" ColumnName="IS_PLANED" />
+          <ScalarProperty Name="REQ_FROM" ColumnName="REQ_FROM" />
+          <ScalarProperty Name="RANK" ColumnName="RANK" />
+          <ScalarProperty Name="TASK_TYPE" ColumnName="TASK_TYPE" />
+          <ScalarProperty Name="PIC" ColumnName="PIC" />
+          <ScalarProperty Name="PIC_JP" ColumnName="PIC_JP" />
+          <ScalarProperty Name="VN_OR_JP" ColumnName="VN_OR_JP" />
+          <ScalarProperty Name="CTRL" ColumnName="CTRL" />
+          <ScalarProperty Name="ASSIGN_DATE" ColumnName="ASSIGN_DATE" />
+          <ScalarProperty Name="DESIRED_REL_DATE" ColumnName="DESIRED_REL_DATE" />
+          <ScalarProperty Name="ABS_REL_DATE" ColumnName="ABS_REL_DATE" />
+          <ScalarProperty Name="EFFORT_PLAN_JP" ColumnName="EFFORT_PLAN_JP" />
+          <ScalarProperty Name="EFFORT_ACTUAL_JP" ColumnName="EFFORT_ACTUAL_JP" />
+          <ScalarProperty Name="EFFORT_PLAN" ColumnName="EFFORT_PLAN" />
+          <ScalarProperty Name="EFFORT_ACTUAL" ColumnName="EFFORT_ACTUAL" />
+          <ScalarProperty Name="IS_TEMP_ANS" ColumnName="IS_TEMP_ANS" />
+          <ScalarProperty Name="WHY_NOT_VN" ColumnName="WHY_NOT_VN" />
+          <ScalarProperty Name="HELP_DESK" ColumnName="HELP_DESK" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="COUNT_ANS" ColumnName="COUNT_ANS" />
+          <ScalarProperty Name="LAST_CONTACT_TIME" ColumnName="LAST_CONTACT_TIME" />
+          <ScalarProperty Name="COUNT_FROM_LAST_CONTACT" ColumnName="COUNT_FROM_LAST_CONTACT" />
+          <ScalarProperty Name="REQ_DEPT" ColumnName="REQ_DEPT" />
+          <ScalarProperty Name="REL_PLAN" ColumnName="REL_PLAN" />
+          <ScalarProperty Name="OLD_REL_PLAN" ColumnName="OLD_REL_PLAN" />
+          <ScalarProperty Name="FIN_DATE" ColumnName="FIN_DATE" />
+          <ScalarProperty Name="LEAD_TIME" ColumnName="LEAD_TIME" />
+          <ScalarProperty Name="REMARK" ColumnName="REMARK" />
+          <ScalarProperty Name="NAME_VN" ColumnName="NAME_VN" />
+          <ScalarProperty Name="KEYWORD" ColumnName="KEYWORD" />
+          <ScalarProperty Name="SUGGEST" ColumnName="SUGGEST" />
+          <ScalarProperty Name="WIKI_JP_LINK" ColumnName="WIKI_JP_LINK" />
+          <ScalarProperty Name="PLAN_EXSE" ColumnName="PLAN_EXSE" />
+          <ScalarProperty Name="PLAN_COM" ColumnName="PLAN_COM" />
+          <ScalarProperty Name="ACTUAL_EXSE" ColumnName="ACTUAL_EXSE" />
+          <ScalarProperty Name="ACTUAL_COM" ColumnName="ACTUAL_COM" />
+          <ScalarProperty Name="UPDATE_STAMP" ColumnName="UPDATE_STAMP" />
+          <ScalarProperty Name="SSMA_TimeStamp" ColumnName="SSMA_TimeStamp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

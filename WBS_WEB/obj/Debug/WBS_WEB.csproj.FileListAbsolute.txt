@@ -1,0 +1,7 @@
+E:\Projects\20120820_WBS_WEB\WBS_WEB\WBS_WEB\bin\WBS_WEB.dll
+E:\Projects\20120820_WBS_WEB\WBS_WEB\WBS_WEB\bin\WBS_WEB.pdb
+E:\Projects\20120820_WBS_WEB\WBS_WEB\WBS_WEB\bin\EntityFramework.dll
+E:\Projects\20120820_WBS_WEB\WBS_WEB\WBS_WEB\bin\EntityFramework.xml
+E:\Projects\20120820_WBS_WEB\WBS_WEB\WBS_WEB\obj\Debug\ResolveAssemblyReference.cache
+E:\Projects\20120820_WBS_WEB\WBS_WEB\WBS_WEB\obj\Debug\WBS_WEB.dll
+E:\Projects\20120820_WBS_WEB\WBS_WEB\WBS_WEB\obj\Debug\WBS_WEB.pdb
